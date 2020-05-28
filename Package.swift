@@ -1,3 +1,6 @@
+// swift-tools-version:5.2
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
 import PackageDescription
 
 let package = Package(
@@ -9,7 +12,6 @@ let package = Package(
             targets: ["DateToolsSwift"]),
     ],
     targets: [
-        Target(name: "DateToolsSwift")
+        .target(name: "DateToolsSwift", dependencies: [])
     ]
 )
-package.exclude = ["DateTools", "Examples", "Tests", "DateToolsSwift/Examples"]
